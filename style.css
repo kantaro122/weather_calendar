@@ -1,0 +1,109 @@
+/* リセット */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* ヘッダー */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  .month-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .jump-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .nav-btn:hover {
+    background: #eee;
+  }
+  
+  /* カレンダー本体 */
+  .calendar-container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  /* 7列×7行 */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: repeat(7, 120px);
+    gap: 1px;
+    background-color: #ccc;
+  }
+  .day-cell {
+    background-color: #fff;
+    position: relative;
+    padding: 4px;
+  }
+  .weekday-header {
+    font-weight: bold;
+    background-color: #eee;
+    text-align: center;
+    line-height: 120px;
+  }
+  
+  /* 日付数字を右上 */
+  .day-num {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* 今日の日付を赤丸に */
+  .today-mark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background-color: #ff3b30;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* 前月/次月をグレー表示 */
+  .other-month {
+    color: #aaa;
+  }
+  
+  /* 天気表示 */
+  .weather-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .weather-text {
+    font-size: 0.75rem;
+    margin-top: 2px;
+    color: #333;
+  }
+  
