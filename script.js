@@ -90,7 +90,7 @@ function getLocationAndFetchForecast() {
 async function callServerlessFunction(lat, lon) {
   // Netlify Functionsのエンドポイント (相対パス)
   // デプロイ後: https://<your-site>.netlify.app/.netlify/functions/getWeather?lat=xxx&lon=yyy
-  const url = `/.netlify/functions/getWeather?lat=${lat}&lon=${lon}`;
+  const url = `/.netlify/functions/getweather?lat=${lat}&lon=${lon}`;
   console.log("呼び出しURL:", url);
 
   try {
