@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# テスト用ファイル
+test_weather.html
+test_weather.js
+
+# macOSのシステムファイル
+.DS_Store
